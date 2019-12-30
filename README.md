@@ -1,6 +1,6 @@
 I don't like default Ubuntu terminal view.
 
-If you are same and like to see as image below you can use mine [bashrc](PVbashrc) file.
+If you are same and like to see as image below you can use mine [bashrc](.bashrc) file.
 
 Before changes:
 
