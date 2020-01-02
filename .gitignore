@@ -4,3 +4,6 @@
 *.iws
 *.ipr
 .slcache/
+
+#backup
+workstation_helper_backup/
