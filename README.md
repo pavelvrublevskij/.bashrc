@@ -27,3 +27,5 @@ After changes:
 Before changes:
 
 After changes:
+
+![vimrc example after](img/vimrc%20example%20after.png)
