@@ -17,15 +17,15 @@ You can skip it at configuration stage.
 ## bashrc
 Before changes:
 
-![bashrc example before](img/bashrc%20example%20before.jpg)
+![bashrc example before](img/bashrc_example_before.jpg)
 
 After changes:
 
-![bashrc example after](img/bashrc%20example%20after.jpg)
+![bashrc example after](img/bashrc_example_after.jpg)
 
 ## vimrc
 Before changes:
 
 After changes:
 
-![vimrc example after](img/vimrc%20example%20after.png)
+![vimrc example after](img/vimrc_example_after.png)
