@@ -28,17 +28,17 @@ function func_install_required_packages() {
   echo "This operation will install require packages (please use search engine for detailed information about package):
     * vim             * htop             * java 8 (open jdk)
     * maven           * vlc              * gradle 5.0
-    * gnote           * putty"
+    * gnote           * putty            * unzip"
   echo "Install selected packages (Y/n):"
   read select
   if [ $select = "Y" ]; then
-    sudo apt-get install vim maven gnote htop vlc putty openjdk-8-jdk
+    sudo apt-get install unzip vim maven gnote htop vlc putty openjdk-8-jdk
 
     # get gradle and install it
     wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp
     sudo unzip -d /opt/gradle /tmp/gradle-*.zip
     sudo echo "export GRADLE_HOME=/opt/gradle/gradle-5.0" >> /etc/profile.d/gradle.sh
-    sudo exho "export PATH=${GRADLE_HOME}/bin:${PATH}" >> /etc/profile.d/gradle.sh
+    sudo echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >> /etc/profile.d/gradle.sh
     sudo chmod +x /etc/profile.d/gradle.sh
     source /etc/profile.d/gradle.sh
   fi
@@ -96,7 +96,7 @@ function func_rollback() {
 menuPoint=0
 until [[ $main_point == 9 ]]; do
   clear
-  echo "M Y    W O R K S T A T I O N     H E L P E R"
+  echo "D E V E L O P E R    W O R K S T A T I O N     H E L P E R"
   echo "Version: $VERSION, Last update date: $DATE"
   echo "=============================================="
   echo "0. About (Help)"

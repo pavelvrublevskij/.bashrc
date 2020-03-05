@@ -22,7 +22,7 @@ endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-"set background=dark
+set background=dark
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -159,3 +159,20 @@ map <s-t> :mark a<CR>:%s/ +$//g<CR>'a'
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
+
+" Make Netrw like NERDtree 
+let g:netrw_banner = 1
+let g:netrw_liststyle = 3
+
+" 1 - open files in a new horizontal split
+" 2 - open files in a new vertical split
+" 3 - open files in a new tab
+" 4 - open in previous window
+let g:netrw_browse_split = 2
+
+let g:netrw_altv = 1
+let g:netrw_winsize = 40
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Explore
+augroup END
