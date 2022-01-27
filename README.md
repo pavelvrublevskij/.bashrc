@@ -29,3 +29,6 @@ Before changes:
 After changes:
 
 ![vimrc example after](img/vimrc_example_after.png)
+
+## docker
+Follow __[this instructions](docker-linux-distributor/README.md)__
