@@ -23,7 +23,9 @@ then write follow:
 sudo visudo
 ```
 Edit file with follow line (use your UNIX user):
+
 ![2nd step commands](img/2.png)
+
 after save file and write ```exit```
 then open terminal again and write/check follow commands:
 ```
