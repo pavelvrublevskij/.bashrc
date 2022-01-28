@@ -1,5 +1,23 @@
-# Setup docker for linux distribution + (_optional_) access from windows
+# Setup Docker on WSL2 for linux distribution + (_optional_) access from windows
 
+## For windows user (Unix users should start from [Setup](#setup))
+* Open a terminal (PowerShell as administrator) type the below command:
+
+```
+wsl --install
+```
+
+* Install Ubuntu as your default distribution. Below link will open the windows store:
+[Get Ubuntu - Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6#activetab=pivot:overviewtab)
+
+* Once download and install finishes, click “Open” to start your setup of your Ubuntu distribution.
+  It will ask you to enter your username and password. Please remember the password and store it in a secure place, that password will be required later
+
+* Open Ubuntu as application from Windows search.
+
+* Do follow below instruction
+
+## Setup
 ```
 sudo apt update
 sudo apt upgrade
